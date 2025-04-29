@@ -1,0 +1,1 @@
+John Doe john.doe@example.com Skills: Python, SQL, Machine Learning, Teamwork Experience: Developed data analysis tools using Python and SQL.
