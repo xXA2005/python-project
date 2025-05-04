@@ -1,0 +1,6 @@
+john smith
+john.smith@email.com
+i am a software engineer with experience in coding and building apps. i worked at tech corp for 2 years where i used python and java to create web tools. i also know sql for databases and javascript for front-end stuff. i’m good at teamwork and solving problems.
+
+skills: python, java, sql, javascript, teamwork
+education: bs computer science, state university, 2020

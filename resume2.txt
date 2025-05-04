@@ -1,0 +1,6 @@
+emma johnson
+emma.johnson@email.com
+data scientist with 3 years at data inc. i use python and sql to analyze big datasets and find trends. i’m skilled in machine learning and data analysis to predict outcomes. i also have good communication skills for presenting findings to teams.
+
+skills: python, sql, machine learning, data analysis, communication
+education: ms data science, city college, 2021
