@@ -8,7 +8,7 @@ This project is a resume analysis tool designed to extract key information from 
 
 The purpose of this project is to automate the initial screening of resumes by identifying relevant candidate information and assessing how well their skills align with job requirements. It serves as a proof-of-concept for integrating natural language processing and machine learning techniques in recruitment processes.
 
-## Components
+## Approach
 
 ### 1. ResumeReader (resume_reader.py)
 
@@ -50,6 +50,12 @@ The purpose of this project is to automate the initial screening of resumes by i
     3. Exit the program.
   - Displays extracted resume details and job match results for command-line use.
 
+## Challenges Faced
+
+- **Different Resume Formats**: Resumes vary widely in structure, layout, and formatting (e.g., tables, columns, or images in PDFs), complicating text extraction across all components. For example, `PyPDF2` struggles with multi-column layouts or scanned PDFs, leading to jumbled or incomplete text, which affects both command-line and API outputs.
+- **Accuracy of Extraction**: Regular expressions for name and email extraction may fail for unconventional formats (e.g., names with special characters or emails in non-standard contexts). Skill extraction is limited to a predefined list, missing synonyms or variations (e.g., "JS" for JavaScript or "ML" for Machine Learning), reducing the effectiveness of skill matching.
+- **Error Handling**: Robust exception handling was critical to manage malformed files, unsupported formats, encoding issues, invalid file paths, and API upload errors (e.g., missing or corrupted files). Providing meaningful error messages and appropriate HTTP status codes in the API, as well as clear feedback in the command-line interface, was essential to ensure a user-friendly experience.
+
 ## How It Works
 
 1. **Resume Processing**:
@@ -78,3 +84,20 @@ The purpose of this project is to automate the initial screening of resumes by i
    - Run `python main.py` and select the `api` option.
    - Use a tool like `curl` or Postman to POST a resume file to `http://localhost:5000/api/upload`.
    - Receive a JSON response with results.
+
+## screenshots
+
+- interface
+![interface](./screenshots/api.png)
+
+- web interface
+![api](./screenshots/api2.png)
+
+- docx file
+![cli](./screenshots/docx.png)
+
+- txt file
+![cli](./screenshots/txt.png)
+
+- pdf file
+![cli](./screenshots/pdf.png)
